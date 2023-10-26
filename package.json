@@ -1,0 +1,24 @@
+{
+  "name": "postmanager",
+  "version": "1.0.0",
+  "description": "simple backend api for postmanager",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pk-co/post-manager.git"
+  },
+  "author": "prasa-k",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pk-co/post-manager/issues"
+  },
+  "homepage": "https://github.com/pk-co/post-manager#readme",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+  
+}
