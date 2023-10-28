@@ -1,28 +1,24 @@
 const express = require('express');
-const router = express.Router();
+const router = express();
+const {getPosts, createPost, getPost, updatePost, deletePost} = require('../controllers/postController')
+
+router.route("/").get(getPosts);
+
+router.route('/').post(createPost);
+
+router.route('/:id').get(getPost);
+
+router.route('/:id').put(updatePost);
 
 
-router.get('/', (req,res)=> {
-    res.status(200).json({message: 'All Post'});
-})
-
-router.post('/', (req,res)=> {
-    res.status(200).json({message: 'Create the post'});
-})
-
-router.get('/:id', (req,res)=>{
-    res.status(200).json({message: 'Post ID'});
-})
+router.route('/:id').delete(deletePost);
 
 
-router.put('/:id', (req,res)=>{
-    res.status(200).json({message: 'Updated Post'});
-})
+// Another ways to write the same functionallity
 
+// router.get("/", getPosts);
+// router.route("/").get(getPosts);
 
-router.delete('/:id', (req,res)=>{
-    res.status(200).json({message: 'Deleted the post'})
-})
 
 
 module.exports = router;
