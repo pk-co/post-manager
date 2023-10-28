@@ -13,8 +13,8 @@
 
 ## Installation
 
-1. Clone this repository: `git clone https://github.com/yourusername/your-web-app.git`
-2. Change to the project directory: `cd your-web-app`
+1. Clone this repository: `git clone https://github.com/pk-co/post-manager.git`
+2. Change to the project directory: `cd post-manager`
 3. Install dependencies: `npm install`
 
 ## Usage
@@ -24,11 +24,11 @@
 
 ## API Endpoints
 
-- `GET /posts`: Get all posts.
-- `GET /posts/:id`: Get a specific post by ID.
-- `POST /posts`: Create a new post.
-- `PUT /posts/:id`: Update an existing post by ID.
-- `DELETE /posts/:id`: Delete a post by ID.
+- `GET /api/posts`: Get all posts.
+- `GET /api/posts/:id`: Get a specific post by ID.
+- `POST /api/posts`: Create a new post.
+- `PUT /api/posts/:id`: Update an existing post by ID.
+- `DELETE /api/posts/:id`: Delete a post by ID.
 
 ## Contributing
 
